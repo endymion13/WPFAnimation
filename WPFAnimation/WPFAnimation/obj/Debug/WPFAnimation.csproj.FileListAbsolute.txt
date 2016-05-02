@@ -1,0 +1,16 @@
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\bin\Debug\WPFAnimation.exe.config
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\bin\Debug\WPFAnimation.exe
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\bin\Debug\WPFAnimation.pdb
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\MainWindow.baml
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\MainWindow.g.cs
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\App.g.cs
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\WPFAnimation_MarkupCompile.cache
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\WPFAnimation.g.resources
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\WPFAnimation.Properties.Resources.resources
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\WPFAnimation.csproj.GenerateResource.Cache
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\WPFAnimation.exe
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\WPFAnimation.pdb
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\WPFAnimation_MarkupCompile.lref
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\Controls\ctrlAnimation.baml
+c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\Controls\ctrlAnimation.g.cs
