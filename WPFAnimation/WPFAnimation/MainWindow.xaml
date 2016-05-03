@@ -2,21 +2,30 @@
  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
  xmlns:ctrl="clr-namespace:WPFAnimation.Controls"
- Title="WPF - Animation" Height="400" Width="500">
-    
-    <DockPanel >
-        
-        <DockPanel x:Name="pnlMenu">
-            <Button x:Name="btnEnter" Content="Enter" Height="50" VerticalAlignment="Top"  Width="75" Click="btnEnter_Click"/>
-        </DockPanel>
-        
-        <DockPanel x:Name="pnlAnimations">
-            
-        </DockPanel>
+ Title="WPF - Animation" Height="500" Width="800">
 
-       
+    <DockPanel >
+      
+        <!-- Menu area -->   
+        <WrapPanel x:Name="pnlMenu"  Orientation="Vertical" Background="#FF0A93BB" >
+            <Button x:Name="btnTimelines" Content="Timeline" Width="100" Height="30" Background="#FF049C9C" Foreground="White" Click="btnTimelines_Click"></Button>
+            <Button x:Name="btnKeyFrame" Content="Key-Frame" Width="100" Height="30" Background="#FF049C9C" Foreground="White" Click="btnKeyFrame_Click"></Button>
+            <Button x:Name="btnPathAnimation" Content="Path" Width="100" Height="30" Background="#FF049C9C" Foreground="White" Click="btnPathAnimation_Click"></Button>
+            <Button x:Name="btnClock" Content="Clocks" Width="100" Height="30" Background="#FF049C9C" Foreground="White" Click="btnClock_Click"></Button>
+            <Button x:Name="btnTransition" Content="Transition" Width="100" Height="30" Background="#FF049C9C" Foreground="White" Click="btnTransition_Click"></Button>
+            <Button x:Name="btnMultimedia" Content="Multimedia" Width="100" Height="30" Background="#FF049C9C" Foreground="White" Click="btnMultimedia_Click"></Button>
+            <Button x:Name="btnEnter" Content="Extra" Width="100" Height="30"  VerticalAlignment="Top" Background="#FF049C9C" Foreground="White"  Click="btnEnter_Click"/>
+        </WrapPanel>
+        <!-- / End Menu area -->
         
+        <!--Example Panel -->
+        <DockPanel x:Name="pnlAnimations">
+            <Label Content="Welcome to Animation World" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25"></Label>
+        </DockPanel>
+        <!--/ End Example Panel -->
+
+
     </DockPanel>
-    
+
 
 </Window>

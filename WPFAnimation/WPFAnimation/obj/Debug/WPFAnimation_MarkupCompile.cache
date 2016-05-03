@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\obj\Debug\
+C:\Users\Eria\Documents\GitHub\WPFAnimation\WPFAnimation\WPFAnimation\obj\Debug\
 WPFAnimation
 none
 false
 DEBUG;TRACE
-c:\users\eria\documents\visual studio 2013\Projects\WPFAnimation\WPFAnimation\App.xaml
-21230067453
-
-6-1703700819
+C:\Users\Eria\Documents\GitHub\WPFAnimation\WPFAnimation\WPFAnimation\App.xaml
+8-1400517938
+31567398048
+13-1099394537
 141755987458
-Controls\ctrlAnimation.xaml;MainWindow.xaml;
+Controls\ctrlAnimation.xaml;Controls\ctrlClocks.xaml;Controls\ctrlMultimedia.xaml;Controls\ctrlPathAnimation.xaml;Controls\ctrlTimelines.xaml;Controls\ctrlKeyFrame.xaml;Controls\ctrlTransition.xaml;MainWindow.xaml;
 
 False
 

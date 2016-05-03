@@ -60,6 +60,30 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\ctrlClocks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ctrlMultimedia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ctrlPathAnimation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ctrlTimelines.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ctrlKeyFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ctrlTransition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,8 +92,27 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Classes\Player.cs" />
     <Compile Include="Controls\ctrlAnimation.xaml.cs">
       <DependentUpon>ctrlAnimation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlClocks.xaml.cs">
+      <DependentUpon>ctrlClocks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlMultimedia.xaml.cs">
+      <DependentUpon>ctrlMultimedia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlPathAnimation.xaml.cs">
+      <DependentUpon>ctrlPathAnimation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlTimelines.xaml.cs">
+      <DependentUpon>ctrlTimelines.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlKeyFrame.xaml.cs">
+      <DependentUpon>ctrlKeyFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlTransition.xaml.cs">
+      <DependentUpon>ctrlTransition.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -103,10 +146,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Sources\Images\" />
-    <Folder Include="Sources\Sounds\" />
-    <Folder Include="Sources\Videos\" />
+    <Resource Include="Sources\Images\Player1.png" />
+    <Resource Include="Sources\Images\Player2.png" />
+    <Content Include="Sources\Videos\Video.mp4" />
+    <Resource Include="Sources\Images\Enemy.png" />
+    <Resource Include="Sources\Images\Player.png" />
+    <Resource Include="Sources\Images\PlayerGameOver.png" />
+    <Content Include="Sources\Sounds\Song1.mp3" />
+    <Content Include="Sources\Sounds\Song2.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

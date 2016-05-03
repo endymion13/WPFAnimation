@@ -42,6 +42,97 @@ namespace WPFAnimation
                 Console.Write(ex.ToString());
             }
         }
+
+        private void btnTimelines_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                ClearAnimationPanel();
+
+                ctrlTimelines ctrlAnimationPanel = new ctrlTimelines();
+                pnlAnimations.Children.Add(ctrlAnimationPanel);
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.ToString());
+            }
+        }
+        private void btnKeyFrame_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                ClearAnimationPanel();
+
+                ctrlKeyFrame ctrlAnimationPanel = new ctrlKeyFrame();
+                pnlAnimations.Children.Add(ctrlAnimationPanel);
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.ToString());
+            }
+        }
+
+        private void btnPathAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                ClearAnimationPanel();
+
+                ctrlPathAnimation ctrlAnimationPanel = new ctrlPathAnimation();
+                pnlAnimations.Children.Add(ctrlAnimationPanel);
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.ToString());
+            }
+        }
+
+        private void btnClock_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                ClearAnimationPanel();
+
+                ctrlClocks ctrlAnimationPanel = new ctrlClocks();
+                pnlAnimations.Children.Add(ctrlAnimationPanel);
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.ToString());
+            }
+        }
+
+        private void btnTransition_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                ClearAnimationPanel();
+
+                ctrlTransition ctrlAnimationPanel = new ctrlTransition();
+                pnlAnimations.Children.Add(ctrlAnimationPanel);
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.ToString());
+            }
+        }
+
+        private void btnMultimedia_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                ClearAnimationPanel();
+
+                ctrlMultimedia ctrlAnimationPanel = new ctrlMultimedia();
+                pnlAnimations.Children.Add(ctrlAnimationPanel);
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.ToString());
+            }
+        }
+
+
         #endregion
 
         #region Methods
@@ -61,8 +152,11 @@ namespace WPFAnimation
             }
         }
 
+
+
+
         #endregion
 
-
+     
     }
 }

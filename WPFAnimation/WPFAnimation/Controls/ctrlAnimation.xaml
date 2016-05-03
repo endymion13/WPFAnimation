@@ -4,10 +4,114 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <Button Content="Control" HorizontalAlignment="Left" Margin="64,111,0,0" VerticalAlignment="Top" Width="75"/>
+             d:DesignHeight="300" d:DesignWidth="400">
+    <Canvas>
+        <MediaElement  Source="..\..\Sources\Sounds\Song1.mp3" x:Name="song1" Visibility="Hidden"></MediaElement>
+        <MediaElement Source="..\..\Sources\Sounds\Song2.mp3" x:Name="song2" Visibility="Hidden"></MediaElement>
+        
+        <!--Player behavior-->
+        <Image x:Name="imgPlayerSprite1"  Source="..\..\Sources\Images\Player1.png" Width="60" Height="80"  Canvas.Top="150" Canvas.Left="0">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="playerTransform" X="0" Y="0" />
+            </Image.RenderTransform>
+
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+
+                            <DoubleAnimationUsingKeyFrames   Storyboard.TargetName="playerTransform"
+                             Storyboard.TargetProperty="X"    Duration="0:0:10" AutoReverse="false">
+                                <LinearDoubleKeyFrame Value="0" KeyTime="0:0:0" />
+                                <LinearDoubleKeyFrame Value="400" KeyTime="0:0:10" />                   
+                            </DoubleAnimationUsingKeyFrames>
+                             
+
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+            
+        </Image>
+        <Image x:Name="imgPlayerSprite2" Visibility="Hidden"  Source="..\..\Sources\Images\Player2.png" Width="60" Height="80" Canvas.Top="150" Canvas.Left="0">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="playerTransform2" X="0" Y="0" />
+            </Image.RenderTransform>
+
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+
+                            <DoubleAnimationUsingKeyFrames   Storyboard.TargetName="playerTransform2"
+                             Storyboard.TargetProperty="X"    Duration="0:0:10" AutoReverse="false">
+                                <LinearDoubleKeyFrame Value="0" KeyTime="0:0:0" />
+                                <LinearDoubleKeyFrame Value="400" KeyTime="0:0:10" />
+                            </DoubleAnimationUsingKeyFrames>
 
 
-    </Grid>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+
+        </Image>
+        <Image x:Name="imgPlayerSpriteGameOver" Visibility="Hidden"  Source="..\..\Sources\Images\PlayerGameOver.png" Width="100" Height="90" Canvas.Top="150" Canvas.Left="0">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="playerTransformOver" X="0" Y="0" />
+            </Image.RenderTransform>
+
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+
+                            <DoubleAnimationUsingKeyFrames   Storyboard.TargetName="playerTransformOver"
+                             Storyboard.TargetProperty="X"    Duration="0:0:10" AutoReverse="false">
+                                <LinearDoubleKeyFrame Value="0" KeyTime="0:0:0" />
+                                <LinearDoubleKeyFrame Value="400" KeyTime="0:0:10" />
+                            </DoubleAnimationUsingKeyFrames>
+
+
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+
+        </Image>
+        <!--END Player behavior-->
+
+
+        <!--Enemy behavior-->
+        <Image x:Name="imgEnemy"  Source="..\..\Sources\Images\Enemy.png" Width="150" Height="180"  Canvas.Top="0" Canvas.Right="0">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="EnemyTransform" X="0" Y="0" />
+            </Image.RenderTransform>
+
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+
+                            <DoubleAnimationUsingKeyFrames   Storyboard.TargetName="EnemyTransform"
+                             Storyboard.TargetProperty="X"    Duration="0:0:10" AutoReverse="false">
+                                <LinearDoubleKeyFrame Value="800" KeyTime="0:0:0" />                            
+                                <LinearDoubleKeyFrame Value="-650" KeyTime="0:0:10" />
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames   Storyboard.TargetName="EnemyTransform"
+                             Storyboard.TargetProperty="Y"    Duration="0:0:10" AutoReverse="false">
+                                <LinearDoubleKeyFrame Value="0" KeyTime="0:0:0" />
+                                <LinearDoubleKeyFrame Value="70" KeyTime="0:0:10" />
+                            </DoubleAnimationUsingKeyFrames>
+
+
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+
+        </Image>
+        <!--END Enemy behavior-->
+    </Canvas>
 </UserControl>
